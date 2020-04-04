@@ -27,10 +27,8 @@ jobs:
     - name: docker push framework
       run: |
         docker push tarscloud/framework:nightly
-        docker push docker.tarsyun.com/tarscloud/framework:nightly
     - name: Build tars image
       run: cd TarsDocker && docker build ./tars/ --file ./tars/Dockerfile --tag tarscloud/tars:nightly
     - name: docker push tars
       run: |
         docker push tarscloud/tars:nightly
-        docker push docker.tarsyun.com/tarscloud/tars:nightly
