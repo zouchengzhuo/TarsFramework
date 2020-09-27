@@ -6,7 +6,7 @@ npm install -g npm pm2 \
     && cd ${TARS_INSTALL}/web && npm install \
     && cd ${TARS_INSTALL}/web/demo && npm install
 
-mkdir /usr/local/app && ln -s ${TARS_INSTALL}/web /usr/local/app/web 
+mkdir -p /usr/local/app && ln -s ${TARS_INSTALL}/web /usr/local/app/web 
 
 mkdir -p /data/tars/app_log
 mkdir -p /data/tars/remote_app_log
